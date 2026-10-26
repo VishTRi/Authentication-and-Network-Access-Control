@@ -1,0 +1,7 @@
+# Controller venv (Python 3.9 recommended):
+#   python3.9 -m venv ryuenv && source ryuenv/bin/activate
+#   pip install "setuptools==65.5.0" wheel pbr
+#   pip install --no-build-isolation "eventlet==0.30.2" ryu
+# Mininet + Open vSwitch come from apt (system python), see README.md
+# Plots (any python):
+matplotlib
