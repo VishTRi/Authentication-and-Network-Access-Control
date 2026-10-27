@@ -10,7 +10,7 @@ or block the host.
              |                                                        |  OpenFlow 1.3 (flow rules)
              +----- svc (protected services :8080 :9090 :7070) <------+
 ```
-Details: `docs/ARCHITECTURE.md`. Demo scripts: `docs/DEMO.md`. Viva prep: `docs/VIVA.md`.
+Details: `docs/ARCHITECTURE.md`. Demo scripts: `docs/DEMO.md`. 
 
 ## Layout
 ```
@@ -30,7 +30,7 @@ tests/mock_controller.py       test the auth server on a laptop without Mininet
 sudo apt update && sudo apt install -y mininet openvswitch-switch python3-pip
 sudo service openvswitch-switch start
 
-# Ryu needs an old Python. This is the tested way (uv downloads Python 3.9):
+# Ryu needs an old Python. Ryu needs an old Python; uv can download Python 3.9:
 pip install uv            # or: sudo apt install pipx && pipx install uv
 uv venv --python 3.9 ryuenv
 uv pip install --python ryuenv/bin/python "setuptools==65.5.0" wheel pbr
@@ -84,7 +84,7 @@ python3 auth/auth_client.py --server 127.0.0.1 login alice alicepw
 - Stale state: `sudo mn -c`, `pkill -f auth_server.py`, restart the controller.
 - Logs: `logs/auth.log`, `logs/controller.log`, `logs/flow_stats.csv`.
 
-## Scope and limitations (be upfront about these in the report/viva)
+## Scope and limitations
 - Credentials travel in plaintext inside the emulated network. A real deployment needs TLS.
 - Identity = source IP. Mitigation in the Mininet lab is fixed MACs/ports; a real network needs 802.1X or
   MAC+port binding against spoofing.
