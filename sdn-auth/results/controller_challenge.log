@@ -1,0 +1,1147 @@
+2026-11-02 00:11:50.540 INFO SWITCH_READY dpid=1 default-deny installed for ['10.0.0.200']
+2026-11-02 00:11:54.591 INFO MONITOR dropped_packets_to_protected=0 bytes=0
+2026-11-02 00:14:04.665 INFO MONITOR dropped_packets_to_protected=2 bytes=148
+2026-11-02 00:14:10.240 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=60
+2026-11-02 00:15:10.263 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:15:10.267 INFO ALLOW_RULE_REMOVED reason=deleted packets=4 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:15:10.269 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:15:10.269 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:17:34.800 INFO MONITOR dropped_packets_to_protected=3 bytes=222
+2026-11-02 00:17:39.801 INFO MONITOR dropped_packets_to_protected=4 bytes=296
+2026-11-02 00:24:45.888 INFO SWITCH_READY dpid=1 default-deny installed for ['10.0.0.200']
+2026-11-02 00:24:50.079 INFO MONITOR dropped_packets_to_protected=0 bytes=0
+2026-11-02 00:25:05.034 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=300
+2026-11-02 00:25:30.091 INFO MONITOR dropped_packets_to_protected=1 bytes=74
+2026-11-02 00:25:35.094 INFO MONITOR dropped_packets_to_protected=2 bytes=148
+2026-11-02 00:25:39.885 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:25:39.886 INFO ALLOW_RULE_REMOVED reason=deleted packets=4 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:25:39.886 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:25:39.886 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:25:55.103 INFO MONITOR dropped_packets_to_protected=3 bytes=222
+2026-11-02 00:26:00.104 INFO MONITOR dropped_packets_to_protected=4 bytes=296
+2026-11-02 00:36:07.639 INFO SWITCH_READY dpid=1 default-deny installed for ['10.0.0.200']
+2026-11-02 00:36:10.779 INFO MONITOR dropped_packets_to_protected=0 bytes=0
+2026-11-02 00:36:15.781 INFO MONITOR dropped_packets_to_protected=1 bytes=74
+2026-11-02 00:36:17.764 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=10
+2026-11-02 00:36:19.890 INFO ALLOW ip=10.0.0.2 user=bob services=[('10.0.0.200', 8080)] ttl=10
+2026-11-02 00:36:20.784 INFO MONITOR dropped_packets_to_protected=5 bytes=370
+2026-11-02 00:36:24.154 WARNING BLOCK ip=10.0.0.3 seconds=30
+2026-11-02 00:36:25.786 INFO MONITOR dropped_packets_to_protected=8 bytes=592
+2026-11-02 00:36:27.237 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:36:27.239 INFO ALLOW_RULE_REMOVED reason=deleted packets=4 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:36:27.240 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:36:27.240 INFO ALLOW_RULE_REMOVED reason=deleted packets=4 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:36:29.334 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=10
+2026-11-02 00:36:30.175 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:36:30.178 INFO ALLOW_RULE_REMOVED reason=deleted packets=4 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:36:30.789 INFO MONITOR dropped_packets_to_protected=10 bytes=740
+2026-11-02 00:36:39.706 INFO ALLOW_RULE_REMOVED reason=hard-timeout(expired) packets=4 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:36:39.706 INFO ALLOW_RULE_REMOVED reason=hard-timeout(expired) packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:36:39.706 INFO ALLOW_RULE_REMOVED reason=hard-timeout(expired) packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:36:40.186 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:36:43.848 INFO BLOCK_RULE_REMOVED reason=deleted packets=23 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3'})
+2026-11-02 00:41:19.160 INFO SWITCH_READY dpid=1 default-deny installed for ['10.0.0.200']
+2026-11-02 00:41:21.137 INFO MONITOR dropped_packets_to_protected=0 bytes=0
+2026-11-02 00:41:27.258 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.277 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:27.277 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.277 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.277 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.300 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.317 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:27.318 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.318 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.318 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.439 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.443 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.456 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.460 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.460 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.480 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:27.480 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.480 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.480 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.498 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:41:27.499 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.499 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.499 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.517 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:41:27.517 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.517 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.517 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.535 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:41:27.535 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.535 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.535 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.552 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:41:27.553 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.553 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.553 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.595 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.596 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.603 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.614 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.614 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:27.635 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:27.636 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.636 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.636 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.654 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:41:27.655 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.655 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.655 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.672 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:41:27.673 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.673 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.673 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.691 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:41:27.691 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.691 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.691 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:27.709 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:41:27.709 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:27.709 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:27.709 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:31.905 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:31.933 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:31.935 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:31.935 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:31.935 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:34.011 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:34.034 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:34.034 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:34.034 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:34.034 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:36.077 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 8080)] ttl=0
+2026-11-02 00:41:36.140 INFO MONITOR dropped_packets_to_protected=4 bytes=296
+2026-11-02 00:41:36.143 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:36.143 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 8080)] ttl=0
+2026-11-02 00:41:36.144 INFO ALLOW_RULE_REMOVED reason=deleted packets=2 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:36.178 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:36.179 INFO ALLOW_RULE_REMOVED reason=deleted packets=2 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:40.317 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:41.142 INFO MONITOR dropped_packets_to_protected=12 bytes=864
+2026-11-02 00:41:42.431 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:42.432 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:42.433 INFO ALLOW_RULE_REMOVED reason=deleted packets=711 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:42.434 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:42.463 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:41:44.568 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:44.569 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:41:44.569 INFO ALLOW_RULE_REMOVED reason=deleted packets=713 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:44.569 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:41:44.574 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 7070)] ttl=0
+2026-11-02 00:41:46.144 INFO MONITOR dropped_packets_to_protected=49 bytes=1102490
+2026-11-02 00:41:46.641 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:46.643 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 7070)] ttl=0
+2026-11-02 00:41:46.643 INFO ALLOW_RULE_REMOVED reason=deleted packets=711 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:41:48.726 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:41:48.729 INFO ALLOW_RULE_REMOVED reason=deleted packets=709 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:10.251 INFO SWITCH_READY dpid=1 default-deny installed for ['10.0.0.200']
+2026-11-02 00:44:11.315 INFO MONITOR dropped_packets_to_protected=0 bytes=0
+2026-11-02 00:44:17.903 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:17.924 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:17.926 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:17.926 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:17.926 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:17.947 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:17.965 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:17.965 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:17.965 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:17.966 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:17.989 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.008 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.009 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.009 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.009 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.031 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.049 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.053 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.053 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.053 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.073 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.093 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.094 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.094 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.094 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.232 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.233 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.245 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.251 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.251 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.272 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.272 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.272 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.272 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.291 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:18.291 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.291 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.291 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.309 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:18.310 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.310 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.310 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.328 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:18.328 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.328 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.328 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.346 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:18.347 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.347 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.347 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.387 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.395 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.402 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.407 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.407 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.427 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.428 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.428 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.428 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.445 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:18.446 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.446 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.446 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.463 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:18.464 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.464 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.464 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.481 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:18.481 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.481 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.482 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.499 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:18.499 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.499 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.499 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.540 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.546 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.554 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.558 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.561 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.583 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.583 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.584 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.584 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.603 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:18.603 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.603 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.603 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.622 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:18.623 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.623 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.623 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.642 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:18.643 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.643 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.643 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.663 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:18.663 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.663 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.663 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.705 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.711 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.722 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.724 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.726 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.748 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.748 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.748 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.748 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.766 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:18.767 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.767 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.767 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.785 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:18.786 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.786 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.786 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.804 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:18.805 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.805 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.805 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.823 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:18.823 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.823 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.823 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.865 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.870 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.879 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.881 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.886 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:18.906 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:18.907 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.907 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.907 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.925 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:18.926 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.926 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.926 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.943 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:18.944 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.944 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.944 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.961 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:18.962 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.962 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.962 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:18.980 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:18.980 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:18.980 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:18.980 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.170 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.172 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.186 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.189 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.193 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.196 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.197 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.199 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.207 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.208 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.234 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:19.235 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.235 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.235 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.253 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:19.255 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.255 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.255 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.272 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:19.273 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.273 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.273 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.290 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:19.291 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.291 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.291 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.308 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:19.308 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.308 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.308 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.325 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:19.326 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.326 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.326 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.344 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:19.345 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.345 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.345 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.363 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:19.363 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.363 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.363 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.381 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:19.382 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.382 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.382 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.400 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:19.400 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.400 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.400 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.484 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.485 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.487 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.489 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.496 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.507 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.515 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.516 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.521 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.526 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.545 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:19.546 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.546 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.546 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.564 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:19.565 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.565 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.565 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.582 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:19.583 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.583 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.583 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.600 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:19.601 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.601 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.601 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.618 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:19.619 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.619 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.619 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.637 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:19.637 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.637 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.637 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.656 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:19.656 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.656 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.656 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.674 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:19.675 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.675 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.675 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.693 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:19.693 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.693 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.693 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.712 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:19.712 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.712 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.712 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.793 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.796 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.797 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.804 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.815 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.824 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.827 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.830 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.831 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.832 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:19.856 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:19.856 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.856 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.856 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.874 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:19.875 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.875 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.875 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.893 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:19.893 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.893 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.893 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.911 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:19.911 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.911 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.911 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.929 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:19.929 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.929 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.929 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.947 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:19.948 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.948 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.948 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.966 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:19.966 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.966 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.966 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:19.984 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:19.984 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:19.984 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:19.984 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.002 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:20.003 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.003 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.003 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.020 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:20.021 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.021 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.021 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.098 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.109 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.115 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.124 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.125 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.135 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.138 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.140 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.140 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.145 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.167 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:20.168 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.168 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.168 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.186 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:20.187 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.187 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.187 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.205 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:20.206 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.206 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.206 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.223 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:20.224 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.224 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.224 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.242 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:20.243 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.243 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.243 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.260 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:20.261 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.261 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.261 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.279 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:20.279 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.279 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.279 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.297 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:20.298 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.298 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.298 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.315 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:20.315 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.315 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.315 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.333 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:20.334 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.334 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.334 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.395 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.396 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.404 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.422 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.434 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.447 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.448 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.449 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.450 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.455 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:20.477 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:20.478 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.478 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.478 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.497 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:20.498 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.498 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.498 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.515 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:20.516 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.516 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.516 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.533 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:20.534 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.534 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.534 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.552 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:20.553 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.553 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.553 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.570 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:20.571 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.571 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.571 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.589 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:20.590 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.590 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.590 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.608 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:20.608 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.609 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.609 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.627 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:20.627 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.627 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.627 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:20.645 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:20.646 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:20.646 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:20.646 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.031 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.031 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.032 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.035 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.041 INFO ALLOW ip=10.0.0.13 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.041 INFO ALLOW ip=10.0.0.17 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.041 INFO ALLOW ip=10.0.0.11 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.042 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.045 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.049 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.049 INFO ALLOW ip=10.0.0.15 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.063 INFO ALLOW ip=10.0.0.20 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.064 INFO ALLOW ip=10.0.0.18 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.064 INFO ALLOW ip=10.0.0.14 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.068 INFO ALLOW ip=10.0.0.16 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.074 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.076 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.079 INFO ALLOW ip=10.0.0.12 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.082 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.088 INFO ALLOW ip=10.0.0.19 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.115 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:21.115 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.115 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.115 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.134 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:21.135 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.135 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.135 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.152 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:21.153 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.153 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.153 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.171 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:21.171 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.171 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.171 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.189 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:21.190 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.190 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.190 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.208 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:21.208 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.208 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.208 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.227 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:21.227 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.227 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.227 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.244 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:21.245 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.245 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.245 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.262 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:21.263 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.263 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.263 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.281 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:21.282 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.282 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.282 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.298 INFO REVOKE ip=10.0.0.11 (had_session=True)
+2026-11-02 00:44:21.299 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.299 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.299 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.316 INFO REVOKE ip=10.0.0.12 (had_session=True)
+2026-11-02 00:44:21.317 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.317 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.317 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.335 INFO REVOKE ip=10.0.0.13 (had_session=True)
+2026-11-02 00:44:21.335 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.335 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.335 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.352 INFO REVOKE ip=10.0.0.14 (had_session=True)
+2026-11-02 00:44:21.353 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.353 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.353 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.371 INFO REVOKE ip=10.0.0.15 (had_session=True)
+2026-11-02 00:44:21.371 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.371 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.371 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.389 INFO REVOKE ip=10.0.0.16 (had_session=True)
+2026-11-02 00:44:21.390 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.390 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.390 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.407 INFO REVOKE ip=10.0.0.17 (had_session=True)
+2026-11-02 00:44:21.408 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.408 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.408 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.426 INFO REVOKE ip=10.0.0.18 (had_session=True)
+2026-11-02 00:44:21.427 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.427 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.427 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.444 INFO REVOKE ip=10.0.0.19 (had_session=True)
+2026-11-02 00:44:21.444 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.444 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.444 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.462 INFO REVOKE ip=10.0.0.20 (had_session=True)
+2026-11-02 00:44:21.462 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.462 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.462 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.626 INFO ALLOW ip=10.0.0.19 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.626 INFO ALLOW ip=10.0.0.20 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.626 INFO ALLOW ip=10.0.0.18 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.639 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.641 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.656 INFO ALLOW ip=10.0.0.11 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.656 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.657 INFO ALLOW ip=10.0.0.12 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.659 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.677 INFO ALLOW ip=10.0.0.13 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.678 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.678 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.681 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.693 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.693 INFO ALLOW ip=10.0.0.14 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.694 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.696 INFO ALLOW ip=10.0.0.16 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.699 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.701 INFO ALLOW ip=10.0.0.17 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.701 INFO ALLOW ip=10.0.0.15 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:21.733 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:21.734 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.734 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.734 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.752 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:21.752 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.752 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.752 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.771 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:21.771 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.771 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.771 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.789 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:21.790 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.790 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.790 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.808 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:21.809 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.809 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.809 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.827 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:21.827 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.827 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.827 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.846 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:21.846 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.846 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.846 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.864 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:21.865 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.865 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.865 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.882 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:21.883 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.883 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.883 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.901 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:21.901 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.901 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.901 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.920 INFO REVOKE ip=10.0.0.11 (had_session=True)
+2026-11-02 00:44:21.920 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.920 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.920 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.938 INFO REVOKE ip=10.0.0.12 (had_session=True)
+2026-11-02 00:44:21.939 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.939 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.939 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.957 INFO REVOKE ip=10.0.0.13 (had_session=True)
+2026-11-02 00:44:21.957 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.957 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.957 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.975 INFO REVOKE ip=10.0.0.14 (had_session=True)
+2026-11-02 00:44:21.976 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.976 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.976 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:21.994 INFO REVOKE ip=10.0.0.15 (had_session=True)
+2026-11-02 00:44:21.994 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:21.994 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:21.994 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.012 INFO REVOKE ip=10.0.0.16 (had_session=True)
+2026-11-02 00:44:22.013 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.013 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.013 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.031 INFO REVOKE ip=10.0.0.17 (had_session=True)
+2026-11-02 00:44:22.031 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.031 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.031 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.049 INFO REVOKE ip=10.0.0.18 (had_session=True)
+2026-11-02 00:44:22.050 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.050 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.050 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.068 INFO REVOKE ip=10.0.0.19 (had_session=True)
+2026-11-02 00:44:22.068 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.068 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.068 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.086 INFO REVOKE ip=10.0.0.20 (had_session=True)
+2026-11-02 00:44:22.086 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.086 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.087 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.269 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.272 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.272 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.275 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.278 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.281 INFO ALLOW ip=10.0.0.16 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.292 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.292 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.293 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.297 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.305 INFO ALLOW ip=10.0.0.20 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.305 INFO ALLOW ip=10.0.0.14 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.306 INFO ALLOW ip=10.0.0.18 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.309 INFO ALLOW ip=10.0.0.15 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.313 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.313 INFO ALLOW ip=10.0.0.17 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.314 INFO ALLOW ip=10.0.0.11 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.316 INFO ALLOW ip=10.0.0.19 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.332 INFO ALLOW ip=10.0.0.12 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.332 INFO ALLOW ip=10.0.0.13 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.359 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:22.361 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.362 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.362 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.380 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:22.381 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.381 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.381 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.399 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:22.399 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.399 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.399 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.417 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:22.418 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.418 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.418 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.436 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:22.436 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.436 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.436 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.454 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:22.454 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.455 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.455 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.472 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:22.473 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.473 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.473 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.491 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:22.492 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.492 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.492 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.510 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:22.511 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.511 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.511 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.529 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:22.529 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.529 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.529 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.547 INFO REVOKE ip=10.0.0.11 (had_session=True)
+2026-11-02 00:44:22.548 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.548 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.548 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.566 INFO REVOKE ip=10.0.0.12 (had_session=True)
+2026-11-02 00:44:22.567 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.567 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.567 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.585 INFO REVOKE ip=10.0.0.13 (had_session=True)
+2026-11-02 00:44:22.585 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.585 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.585 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.602 INFO REVOKE ip=10.0.0.14 (had_session=True)
+2026-11-02 00:44:22.603 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.603 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.603 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.620 INFO REVOKE ip=10.0.0.15 (had_session=True)
+2026-11-02 00:44:22.621 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.621 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.621 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.639 INFO REVOKE ip=10.0.0.16 (had_session=True)
+2026-11-02 00:44:22.639 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.639 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.639 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.657 INFO REVOKE ip=10.0.0.17 (had_session=True)
+2026-11-02 00:44:22.657 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.657 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.657 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.675 INFO REVOKE ip=10.0.0.18 (had_session=True)
+2026-11-02 00:44:22.676 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.676 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.676 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.693 INFO REVOKE ip=10.0.0.19 (had_session=True)
+2026-11-02 00:44:22.694 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.694 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.694 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.712 INFO REVOKE ip=10.0.0.20 (had_session=True)
+2026-11-02 00:44:22.713 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.713 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.713 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:22.893 INFO ALLOW ip=10.0.0.20 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.893 INFO ALLOW ip=10.0.0.19 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.894 INFO ALLOW ip=10.0.0.18 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.894 INFO ALLOW ip=10.0.0.11 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.903 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.903 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.909 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.917 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.918 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.918 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.920 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.933 INFO ALLOW ip=10.0.0.16 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.934 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.935 INFO ALLOW ip=10.0.0.14 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.940 INFO ALLOW ip=10.0.0.15 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.941 INFO ALLOW ip=10.0.0.17 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.948 INFO ALLOW ip=10.0.0.12 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.956 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.957 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.957 INFO ALLOW ip=10.0.0.13 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:22.987 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:22.988 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:22.988 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:22.988 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.007 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:23.008 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.008 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.008 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.026 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:23.027 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.027 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.027 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.045 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:23.046 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.046 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.046 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.064 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:23.064 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.064 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.064 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.083 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:23.083 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.083 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.083 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.101 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:23.102 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.102 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.102 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.120 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:23.120 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.120 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.120 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.139 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:23.139 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.139 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.139 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.157 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:23.158 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.158 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.158 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.176 INFO REVOKE ip=10.0.0.11 (had_session=True)
+2026-11-02 00:44:23.176 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.177 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.177 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.195 INFO REVOKE ip=10.0.0.12 (had_session=True)
+2026-11-02 00:44:23.195 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.195 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.195 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.213 INFO REVOKE ip=10.0.0.13 (had_session=True)
+2026-11-02 00:44:23.213 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.213 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.213 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.231 INFO REVOKE ip=10.0.0.14 (had_session=True)
+2026-11-02 00:44:23.232 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.232 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.232 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.250 INFO REVOKE ip=10.0.0.15 (had_session=True)
+2026-11-02 00:44:23.250 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.250 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.250 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.269 INFO REVOKE ip=10.0.0.16 (had_session=True)
+2026-11-02 00:44:23.269 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.269 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.269 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.286 INFO REVOKE ip=10.0.0.17 (had_session=True)
+2026-11-02 00:44:23.287 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.287 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.287 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.304 INFO REVOKE ip=10.0.0.18 (had_session=True)
+2026-11-02 00:44:23.305 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.305 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.305 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.322 INFO REVOKE ip=10.0.0.19 (had_session=True)
+2026-11-02 00:44:23.322 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.322 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.322 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.340 INFO REVOKE ip=10.0.0.20 (had_session=True)
+2026-11-02 00:44:23.340 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.340 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.340 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.514 INFO ALLOW ip=10.0.0.7 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.517 INFO ALLOW ip=10.0.0.14 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.523 INFO ALLOW ip=10.0.0.13 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.544 INFO ALLOW ip=10.0.0.9 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.545 INFO ALLOW ip=10.0.0.8 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.545 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.545 INFO ALLOW ip=10.0.0.17 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.548 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.549 INFO ALLOW ip=10.0.0.10 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.557 INFO ALLOW ip=10.0.0.2 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.563 INFO ALLOW ip=10.0.0.12 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.564 INFO ALLOW ip=10.0.0.11 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.564 INFO ALLOW ip=10.0.0.20 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.565 INFO ALLOW ip=10.0.0.6 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.566 INFO ALLOW ip=10.0.0.5 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.566 INFO ALLOW ip=10.0.0.4 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.571 INFO ALLOW ip=10.0.0.16 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.572 INFO ALLOW ip=10.0.0.15 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.581 INFO ALLOW ip=10.0.0.18 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.588 INFO ALLOW ip=10.0.0.19 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:23.615 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:23.616 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.616 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.616 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.635 INFO REVOKE ip=10.0.0.2 (had_session=True)
+2026-11-02 00:44:23.635 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.635 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.635 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.653 INFO REVOKE ip=10.0.0.3 (had_session=True)
+2026-11-02 00:44:23.654 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.654 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.654 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.672 INFO REVOKE ip=10.0.0.4 (had_session=True)
+2026-11-02 00:44:23.673 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.673 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.673 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.4', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.691 INFO REVOKE ip=10.0.0.5 (had_session=True)
+2026-11-02 00:44:23.691 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.691 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.692 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.5', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.710 INFO REVOKE ip=10.0.0.6 (had_session=True)
+2026-11-02 00:44:23.710 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.710 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.710 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.6', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.728 INFO REVOKE ip=10.0.0.7 (had_session=True)
+2026-11-02 00:44:23.729 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.729 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.729 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.7', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.747 INFO REVOKE ip=10.0.0.8 (had_session=True)
+2026-11-02 00:44:23.747 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.748 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.748 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.8', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.766 INFO REVOKE ip=10.0.0.9 (had_session=True)
+2026-11-02 00:44:23.766 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.766 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.766 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.9', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.784 INFO REVOKE ip=10.0.0.10 (had_session=True)
+2026-11-02 00:44:23.785 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.785 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.785 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.10', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.803 INFO REVOKE ip=10.0.0.11 (had_session=True)
+2026-11-02 00:44:23.803 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.803 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.803 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.11', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.822 INFO REVOKE ip=10.0.0.12 (had_session=True)
+2026-11-02 00:44:23.822 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.822 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.822 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.12', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.839 INFO REVOKE ip=10.0.0.13 (had_session=True)
+2026-11-02 00:44:23.840 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.840 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.840 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.13', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.857 INFO REVOKE ip=10.0.0.14 (had_session=True)
+2026-11-02 00:44:23.858 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.858 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.858 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.14', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.875 INFO REVOKE ip=10.0.0.15 (had_session=True)
+2026-11-02 00:44:23.876 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.876 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.876 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.15', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.894 INFO REVOKE ip=10.0.0.16 (had_session=True)
+2026-11-02 00:44:23.894 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.894 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.894 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.16', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.912 INFO REVOKE ip=10.0.0.17 (had_session=True)
+2026-11-02 00:44:23.912 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.912 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.912 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.17', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.930 INFO REVOKE ip=10.0.0.18 (had_session=True)
+2026-11-02 00:44:23.932 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.932 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.932 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.18', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.949 INFO REVOKE ip=10.0.0.19 (had_session=True)
+2026-11-02 00:44:23.949 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.949 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.949 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.19', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:23.967 INFO REVOKE ip=10.0.0.20 (had_session=True)
+2026-11-02 00:44:23.968 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:23.968 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:23.968 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.20', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:33.552 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:33.576 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:33.576 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:33.576 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:33.577 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:35.636 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:35.657 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:35.657 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:35.658 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:35.658 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:36.318 INFO MONITOR dropped_packets_to_protected=3 bytes=222
+2026-11-02 00:44:37.743 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:37.767 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:37.768 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:37.768 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:37.768 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:39.843 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:39.865 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:39.866 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:39.866 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:39.866 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:41.320 INFO MONITOR dropped_packets_to_protected=7 bytes=518
+2026-11-02 00:44:41.943 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:41.965 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:41.966 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:41.966 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:41.966 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:44.004 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 8080)] ttl=0
+2026-11-02 00:44:44.062 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:44.062 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 8080)] ttl=0
+2026-11-02 00:44:44.063 INFO ALLOW_RULE_REMOVED reason=deleted packets=2 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:44.099 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:44.099 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 8080)] ttl=0
+2026-11-02 00:44:44.100 INFO ALLOW_RULE_REMOVED reason=deleted packets=2 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:44.133 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:44.134 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 8080)] ttl=0
+2026-11-02 00:44:44.134 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:44.169 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:44.169 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 8080)] ttl=0
+2026-11-02 00:44:44.169 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:44.204 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:44.205 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:46.320 INFO MONITOR dropped_packets_to_protected=28 bytes=1976
+2026-11-02 00:44:51.323 INFO MONITOR dropped_packets_to_protected=33 bytes=2346
+2026-11-02 00:44:54.477 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:44:56.327 INFO MONITOR dropped_packets_to_protected=36 bytes=2568
+2026-11-02 00:44:59.591 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:44:59.593 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:44:59.593 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:44:59.593 INFO ALLOW_RULE_REMOVED reason=deleted packets=1767 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:44:59.623 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:45:01.330 INFO MONITOR dropped_packets_to_protected=51 bytes=441910
+2026-11-02 00:45:04.731 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:04.733 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:45:04.733 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:45:04.733 INFO ALLOW_RULE_REMOVED reason=deleted packets=1770 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:04.764 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:45:06.333 INFO MONITOR dropped_packets_to_protected=65 bytes=846810
+2026-11-02 00:45:09.941 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:09.942 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:45:09.942 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:45:09.943 INFO ALLOW_RULE_REMOVED reason=deleted packets=909 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:09.972 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:45:11.334 INFO MONITOR dropped_packets_to_protected=85 bytes=2037562
+2026-11-02 00:45:15.078 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:15.079 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:45:15.079 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:45:15.080 INFO ALLOW_RULE_REMOVED reason=deleted packets=1768 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:15.110 INFO ALLOW ip=10.0.0.1 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=600
+2026-11-02 00:45:16.336 INFO MONITOR dropped_packets_to_protected=102 bytes=2553084
+2026-11-02 00:45:20.280 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:20.282 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 00:45:20.282 INFO ALLOW_RULE_REMOVED reason=deleted packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 00:45:20.282 INFO ALLOW_RULE_REMOVED reason=deleted packets=1491 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:20.287 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 7070)] ttl=0
+2026-11-02 00:45:21.336 INFO MONITOR dropped_packets_to_protected=122 bytes=3744700
+2026-11-02 00:45:25.407 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:25.409 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 7070)] ttl=0
+2026-11-02 00:45:25.409 INFO ALLOW_RULE_REMOVED reason=deleted packets=1156 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:26.338 INFO MONITOR dropped_packets_to_protected=140 bytes=4827320
+2026-11-02 00:45:30.515 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:30.517 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 7070)] ttl=0
+2026-11-02 00:45:30.518 INFO ALLOW_RULE_REMOVED reason=deleted packets=1297 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:35.598 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:35.600 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 7070)] ttl=0
+2026-11-02 00:45:35.601 INFO ALLOW_RULE_REMOVED reason=deleted packets=1784 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:36.343 INFO MONITOR dropped_packets_to_protected=153 bytes=5201746
+2026-11-02 00:45:40.748 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:40.751 INFO ALLOW ip=10.0.0.1 user=static services=[('10.0.0.200', 7070)] ttl=0
+2026-11-02 00:45:40.751 INFO ALLOW_RULE_REMOVED reason=deleted packets=1400 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:41.345 INFO MONITOR dropped_packets_to_protected=173 bytes=6391746
+2026-11-02 00:45:45.837 INFO REVOKE ip=10.0.0.1 (had_session=True)
+2026-11-02 00:45:45.844 INFO ALLOW_RULE_REMOVED reason=deleted packets=1761 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 00:45:46.355 INFO MONITOR dropped_packets_to_protected=194 bytes=7026964
+2026-11-02 00:56:14.947 INFO SWITCH_READY dpid=1 default-deny installed for ['10.0.0.200']
+2026-11-02 00:56:15.538 INFO MONITOR dropped_packets_to_protected=0 bytes=0
+2026-11-02 00:56:40.548 INFO MONITOR dropped_packets_to_protected=2 bytes=148
+2026-11-02 00:57:16.984 WARNING BLOCK ip=10.0.0.3 seconds=30
+2026-11-02 00:57:47.088 INFO BLOCK_RULE_REMOVED reason=hard-timeout(expired) packets=22 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3'})
+2026-11-02 01:02:33.844 WARNING BLOCK ip=10.0.0.3 seconds=30
+2026-11-02 01:03:03.926 INFO BLOCK_RULE_REMOVED reason=hard-timeout(expired) packets=7 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3'})
+2026-11-02 01:03:30.588 INFO ALLOW ip=10.0.0.3 user=alice services=[('10.0.0.200', 8080), ('10.0.0.200', 9090), ('10.0.0.200', 7070)] ttl=300
+2026-11-02 01:08:31.004 INFO ALLOW_RULE_REMOVED reason=hard-timeout(expired) packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})
+2026-11-02 01:08:31.007 INFO ALLOW_RULE_REMOVED reason=hard-timeout(expired) packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})
+2026-11-02 01:08:31.007 INFO ALLOW_RULE_REMOVED reason=hard-timeout(expired) packets=0 match=OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})
+2026-11-02 01:08:31.207 INFO REVOKE ip=10.0.0.3 (had_session=True)

@@ -1,0 +1,26 @@
+time,priority,cookie,match,packets,bytes
+1793559970.779,50,0x50,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '10.0.0.200'})",0,0
+1793559975.781,50,0x50,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '10.0.0.200'})",1,74
+1793559980.784,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})",4,272
+1793559980.784,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})",4,272
+1793559980.784,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})",0,0
+1793559980.784,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})",4,272
+1793559980.784,50,0x50,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '10.0.0.200'})",5,370
+1793559985.786,200,0xb1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3'})",22,1567
+1793559985.786,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})",4,272
+1793559985.786,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})",4,272
+1793559985.786,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})",0,0
+1793559985.786,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.2', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})",4,272
+1793559985.786,50,0x50,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '10.0.0.200'})",8,592
+1793559990.789,200,0xb1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3'})",23,1641
+1793559990.789,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})",4,272
+1793559990.789,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})",0,0
+1793559990.789,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})",0,0
+1793559990.789,50,0x50,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '10.0.0.200'})",10,740
+1793559995.792,200,0xb1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3'})",23,1641
+1793559995.792,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 8080})",4,272
+1793559995.792,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 9090})",0,0
+1793559995.792,100,0xa1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.1', 'ipv4_dst': '10.0.0.200', 'ip_proto': 6, 'tcp_dst': 7070})",0,0
+1793559995.792,50,0x50,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '10.0.0.200'})",10,740
+1793560000.794,200,0xb1,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_src': '10.0.0.3'})",23,1641
+1793560000.794,50,0x50,"OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '10.0.0.200'})",10,740

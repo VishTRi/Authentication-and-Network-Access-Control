@@ -1,0 +1,19 @@
+PASS  T1  h1 -> svc:8080 BLOCKED before login  
+PASS  T1b h1 can still reach the auth server  
+PASS  T2  alice login accepted  OK ttl=10 services=10.0.0.200:8080;10.0.0.200:9090;10.0.0.200:7070
+PASS  T3a h1 -> svc:8080 allowed after login  
+PASS  T3b h1 -> svc:9090 allowed after login  
+PASS  T3c h2 (not logged in) still BLOCKED  
+PASS  T4a bob login accepted  
+PASS  T4b h2 -> svc:8080 allowed  
+PASS  T4c h2 -> svc:9090 BLOCKED by policy  
+PASS  T5a mallory login denied by policy  DENY no-access-policy
+PASS  T5b h3 -> svc:8080 BLOCKED  
+PASS  T6a 3rd wrong password triggers block  DENY too-many-failures blocked 30
+PASS  T6b correct password from blocked host fails (lock-out)  ERROR TimeoutError
+PASS  T7a logout accepted  
+PASS  T7b h1 -> svc:8080 BLOCKED after logout  
+PASS  T8a h1 allowed right after login  
+PASS  T8b h1 BLOCKED after session expiry  
+
+17/17 passed
