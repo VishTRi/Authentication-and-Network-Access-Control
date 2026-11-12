@@ -10,7 +10,7 @@ or block the host.
              |                                                        |  OpenFlow 1.3 (flow rules)
              +----- svc (protected services :8080 :9090 :7070) <------+
 ```
-Details: `docs/ARCHITECTURE.md`. Demo scripts: `docs/DEMO.md`. Viva prep: `docs/VIVA.md`.
+Details: `docs/ARCHITECTURE.md`. Demo scripts: `docs/DEMO.md`. 
 
 ## Layout
 ```
