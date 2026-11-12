@@ -10,6 +10,11 @@ or block the host.
              |                                                        |  OpenFlow 1.3 (flow rules)
              +----- svc (protected services :8080 :9090 :7070) <------+
 ```
+```
+> All commands below are run from the `sdn-auth/` folder:
+> `git clone https://github.com/VishTRi/Authentication-and-Network-Access-Control.git`
+> `cd Authentication-and-Network-Access-Control/sdn-auth`
+```
 Details: `docs/ARCHITECTURE.md`. Demo scripts: `docs/DEMO.md`. 
 
 ## Layout
@@ -41,10 +46,12 @@ Mininet and the services use the system `python3` (stdlib only). Only the contro
 ## Run
 Terminal A (controller, from the project root):
 ```bash
+cd Authentication-and-Network-Access-Control/sdn-auth
 ryuenv/bin/ryu-manager controller/acl_controller.py
 ```
 Terminal B (topology + services, from the project root):
 ```bash
+cd Authentication-and-Network-Access-Control/sdn-auth
 sudo python3 topology/topology.py --clients 3 --session-ttl 60
 ```
 Then in the Mininet CLI:
