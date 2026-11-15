@@ -4,7 +4,7 @@
 
 A TCP authentication service integrated with an SDN controller. Hosts must log in before they can reach a protected service; the controller dynamically grants, restricts or revokes network access using OpenFlow rules.
 
-Team: *names*  |  Repository: *link*  |  Version: *date*
+Team: Vishesh Trivedi, Tanay Rao, Tilva Dhruv  |  Repository: https://github.com/VishTRi/Authentication-and-Network-Access-Control  |
 
 ---
 
