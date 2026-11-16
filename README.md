@@ -14,7 +14,7 @@ Details: `docs/ARCHITECTURE.md`. Demo scripts: `docs/DEMO.md`. Report: `docs/REP
 Technical reference: `DOCUMENTATION.md`
 
 ## Layout
-All commands are run inside sdn-auth folder
+### Important: All commands are run inside sdn-auth folder
 ```
 cd sdn-auth
 controller/acl_controller.py   Ryu app: 2-table pipeline, control channel, monitoring
